@@ -11,7 +11,8 @@ krepselis = []
 
 def rodyti_meniu():
     print("\n--- MENIU ---")
-    for i, (preke, kaina) in(meniu.items(), start=1):
+    for i, (preke, kaina) in
+    (meniu.items(), start=1):
         print(f"{i}. {preke} - {kaina:.2f} €")
 
 
@@ -118,3 +119,4 @@ def pagrindinis_meniu():
 
 
 pagrindinis_meniu()
+
