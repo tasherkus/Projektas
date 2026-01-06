@@ -11,7 +11,7 @@ krepselis = []
 
 def rodyti_meniu():
     print("\n--- MENIU ---")
-    for i, (preke, kaina) in enumerate(meniu.items(), start=1):
+    for i, (preke, kaina) in(meniu.items(), start=1):
         print(f"{i}. {preke} - {kaina:.2f} €")
 
 
@@ -49,7 +49,7 @@ def pasalinti_preke():
 
     if 1 <= pasirinkimas <= len(krepselis):
         preke = krepselis.pop(pasirinkimas - 1)
-        print(f"🗑 {preke} pašalinta iš krepšelio.")
+        print(f"{preke} pašalinta iš krepšelio.")
     else:
         print("Neteisingas pasirinkimas.")
 
@@ -60,7 +60,7 @@ def rodyti_krepseli():
         print("Krepšelis tuščias.")
         return
 
-    for i, preke in enumerate(krepselis, start=1):
+    for i, preke in(krepselis, start=1):
         print(f"{i}. {preke} - {meniu[preke]:.2f} €")
 
     print(f"Bendra suma: {skaiciuoti_suma():.2f} €")
